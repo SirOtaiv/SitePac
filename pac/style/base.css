@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@font-face {
+    font-family: oxanium;
+    src: url(fontes/oxanium/Oxanium-Regular.ttf);
+}
+@font-face {
+    font-family: nucleo;
+    src: url(fontes/nucleo/Nucleo.ttf);
+}
+@font-face {
+    font-family: prometheus;
+    src: url(fontes/prometheus/PROMETHEUS.ttf);
+}
+@font-face {
+    font-family: sharetech;
+    src: url(fontes/sharetech/ShareTechMono-Regular.ttf);
+}
+html {
+    font-family: nucleo;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1920px) {
+    html {
+        font-size: 40px;
+    }
+}
+
+/*Header da página*/
+header {
+    width: 100vw;
+    height: 95vw !important;
+    border-bottom: 2px solid black;
+}
+    div#space {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+    /*Bloco de texto centralizado*/
+    div.text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        /*Título do header*/
+        header h1 {
+            font-size: 2em;
+        }
+        header h2 {
+            font-size: 1em;
+        }
+    /*Logo do header*/
+    img#logo {
+        height: 16.2em;
+        width: auto;
+    }
+
+/*Divisão da informação*/
+div#info {
+    background-color: #4f4f4f;
+    font-family: oxanium;
+    margin-bottom: 3vw;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+    /*Vídeo*/
+    div#video {
+        margin-left: 15vw;
+    }
+        iframe#apre {
+            margin-top: 3vw;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    /*Informações sobre o vídeo*/
+    div#info h2 {
+        margin-left: 3vw;
+        color: white;
+        text-shadow: -2px 2px 15px black;
+        font-size: 1.3em;
+    }
+    div#vinfo {
+        background-color: #757575;
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+    }
+    div#vinfo p {
+        border-right: 1px dashed black;
+        width: 10em;
+        margin-left: 15px;
+    }
+        p a#blog {
+            text-decoration: none;
+            background-color: aliceblue;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        p a#blog:hover {
+            background-color: darkgrey;
+            color: black;
+        }
+        p a#blog:visited {
+            background-color: black;
+            color: antiquewhite;
+        }
+
+/*Seção dos integrantes (Footer)*/
+footer {
+    font-family: oxanium;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+}
+    /*Grid de imagens dos integrantes*/
+    div.grid {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        gap: 2vw;
+    }
+        div.image {
+            border: 2px solid black;
+            border-radius: 5px;
+            position: relative;
+            text-align: center;
+        }
+
+            /*Overlay da imagem*/
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #4f4f4f;
+            }
+        div.image:hover .overlay {
+            opacity: 1;
+        }
+            div.parag {
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            footer p#inside {
+                font-size: 20px;
+            }
