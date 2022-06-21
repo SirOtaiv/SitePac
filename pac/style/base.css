@@ -28,21 +28,13 @@ html {
     padding: 0;
 }
 
-@media (max-width: 1920px) {
-    html {
-        font-size: 40px;
-    }
-}
-
 /*Header da página*/
 header {
-    width: 100vw;
-    height: 95vw !important;
+    height: 93vh !important;
     border-bottom: 2px solid black;
 }
     div#space {
         display: flex;
-        width: 100vw;
         justify-content: center;
     }
     /*Bloco de texto centralizado*/
@@ -74,7 +66,8 @@ div#info {
 }
     /*Vídeo*/
     div#video {
-        margin-left: 15vw;
+        display: flex;
+        justify-content: center;
     }
         iframe#apre {
             margin-top: 3vw;
@@ -91,6 +84,7 @@ div#info {
     div#vinfo {
         background-color: #757575;
         margin-left: 5vw;
+        margin-right: 5vw;
         display: flex;
         flex-direction: row;
         border-radius: 5px;
@@ -100,27 +94,44 @@ div#info {
         width: 10em;
         margin-left: 15px;
     }
+    div#info p.end {
+        border: none;
+    }
+        p#linkblog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         p a#blog {
+            color: black;
             text-decoration: none;
             background-color: aliceblue;
-            padding: 5px;
+            padding: 0px 5px 0px 5px;
             border-radius: 5px;
+            box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.3);
         }
         p a#blog:hover {
+            position: relative;
+            margin-top: 3px;
+            margin-right: 3px;
             background-color: darkgrey;
             color: black;
-        }
-        p a#blog:visited {
-            background-color: black;
-            color: antiquewhite;
+            box-shadow: none;
         }
 
 /*Seção dos integrantes (Footer)*/
 footer {
     font-family: oxanium;
-    margin-left: 3vw;
     margin-bottom: 5vh;
 }
+    footer h2 {
+        margin-left: 1em;
+    }
+    div.contfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     /*Grid de imagens dos integrantes*/
     div.grid {
         display: grid;
@@ -152,14 +163,15 @@ footer {
         }
             div.parag {
                 color: white;
-                position: absolute;
+                position: relative;
                 top: 50%;
                 left: 50%;
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
                 text-align: center;
+                font-size: 1.2em;
             }
             footer p#inside {
-                font-size: 20px;
+                font-size: 0.8em;
             }

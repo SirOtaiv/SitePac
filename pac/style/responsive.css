@@ -1,0 +1,23 @@
+@media (min-width: 1600px) {
+    html {
+        font-size: 35px;
+    }
+}
+@media (min-width: 1920px) {
+    html {
+        font-size: 40px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    body {
+        width: 100vw;
+    }
+    html {
+        font-size: 20px;
+    }
+    iframe {
+        width: 720px;
+        height: 405px;
+    }
+
+}
