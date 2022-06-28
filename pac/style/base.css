@@ -16,7 +16,6 @@
     src: url(fontes/sharetech/ShareTechMono-Regular.ttf);
 }
 html {
-    background-color: red;
     font-family: nucleo;
     box-sizing: border-box;
     display: flex;
