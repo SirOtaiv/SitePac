@@ -27,6 +27,9 @@ html {
     margin: 0;
     padding: 0;
 }
+body {
+    width: 100vw;
+}
 
 /*Header da página*/
 header {
@@ -34,8 +37,10 @@ header {
     border-bottom: 2px solid black;
 }
     div#space {
+        height: 93vh;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     /*Bloco de texto centralizado*/
     div.text {
@@ -135,7 +140,7 @@ footer {
     /*Grid de imagens dos integrantes*/
     div.grid {
         display: grid;
-        grid-template-columns: 400px 400px;
+        grid-template-columns: 300px 300px 300px 300px;
         gap: 2vw;
     }
         div.image {

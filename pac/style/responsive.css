@@ -8,16 +8,29 @@
         font-size: 40px;
     }
 }
-@media (min-width: 800px) and (max-width: 1200px) {
-    body {
-        width: 100vw;
+@media (min-width: 1200px) and (max-width: 1300px) {
+    div.grid {
+        grid-template-columns: 250px 250px 250px 250px;
     }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    html {
+        font-size: 25px;
+    }
+    div.grid {
+        grid-template-columns: 400px 400px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
     html {
         font-size: 20px;
     }
     iframe {
         width: 720px;
         height: 405px;
+    }
+    div.grid {
+        grid-template-columns: 300px 300px;
     }
 
 }
