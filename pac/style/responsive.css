@@ -51,4 +51,10 @@
         height: 2.5em;
         width: 2.5em;
     }
+    div.carousel {
+        width: 600px;
+    }
+    img.d-block {
+        width: 600px;
+    }
 }
