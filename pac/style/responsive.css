@@ -12,6 +12,11 @@
     div.grid {
         grid-template-columns: 250px 250px 250px 250px;
     }
+
+    a.navbar-brand {
+        top: 75vh;
+        left: 85vw;
+    }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
     html {
@@ -19,6 +24,11 @@
     }
     div.grid {
         grid-template-columns: 400px 400px;
+    }
+    /**/
+    a.navbar-brand {
+        top: 73vh;
+        left: 83vw;
     }
 }
 @media (min-width: 800px) and (max-width: 1000px) {
@@ -33,4 +43,12 @@
         grid-template-columns: 300px 300px;
     }
     /*Parte do bootstrap*/
+    a.navbar-brand {
+        top: 73vh;
+        left: 83vw;
+    }
+    img#icone {
+        height: 2.5em;
+        width: 2.5em;
+    }
 }

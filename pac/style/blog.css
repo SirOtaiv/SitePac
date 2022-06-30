@@ -31,6 +31,17 @@ nav.navbar {
     padding: 2px;
     width: 100%;
 }
+a.navbar-brand {
+    position: relative;
+    top: 70vh;
+    left: 85vw;
+    z-index: 2;
+    opacity: 0.3;
+    font-size: 2rem;
+}
+    a.navbar-brand:hover {
+        opacity: 1;
+    }
 button.navbar-toggler {
     margin: 5px 0px 5px 0px;
 }
@@ -42,16 +53,19 @@ a {
     text-decoration: none !important;
 }
 h1.titulo {
-    margin-left: 20px;
+
+    display: flex;
+    justify-content: center;
 }
 
 img#icone {
-    top: 0;
-    height: 2.5em;
-    width: 2.5em;
+    height: 2em;
+    width: 2em;
     position: absolute;
+    align-items: right;
+    background-color: aliceblue;
+    border-radius: 50%;
 }
-
 
 img.thumb {
     height: 180px;
@@ -80,6 +94,9 @@ li.list-group-item {
     margin-right: 2vw;
     border-radius: 10px !important;
     align-items: center !important;
+}
+li.list-group-item:hover {
+    background-color:#a9a9a9;
 }
 div.posts {
     margin-top: 90px;
