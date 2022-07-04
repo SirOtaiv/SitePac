@@ -2,10 +2,26 @@
     html {
         font-size: 35px;
     }
+    div.grid {
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+
+    a.navbar-brand {
+        top: 75vh;
+        left: 88vw;
+    }
 }
 @media (min-width: 1920px) {
     html {
         font-size: 40px;
+    }
+    div.grid {
+        grid-template-columns: 350px 350px 350px 350px;
+    }
+
+    a.navbar-brand {
+        top: 78vh;
+        left: 88vw;
     }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -56,5 +72,33 @@
     }
     img.d-block {
         width: 600px;
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
+    div#space {
+        flex-direction: column;
+    }
+    iframe {
+        width: 288px;
+        height: 162px;
+    }
+    div#vinfo {
+        display: grid;
+        grid-template-columns: 300px;
+        gap: 1em;
+    }
+    div#vinfo p {
+        width: 20em;
+        border-right: none;
+        border-bottom: 1px dashed black;
+    }
+    div#vinfo p.end {
+        margin-bottom: 1em;
+    }
+    div.grid {
+        grid-template-columns: 300px;
     }
 }
