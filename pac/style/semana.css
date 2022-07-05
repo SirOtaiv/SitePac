@@ -12,7 +12,7 @@ div.carousel-caption {
     backdrop-filter: blur(20px);
 }
 div.carousel {
-width: 800px;
+    width: 800px;
 }
 div.carousel-inner {
     border-radius: 10px;
@@ -31,6 +31,7 @@ div.table{
             background-color: darkcyan;
         }
         th.explic {
+            text-align: justify;
             font-size: 20px;
         }
 
@@ -38,13 +39,20 @@ div.prog {
     display: flex;
     justify-content: center;
 }
-    pre {
+    pre, .block {
         padding: 15px;
         width: 85vw;
         border-radius: 15px;
-        counter-reset: linenumber;
         background-color: #292a2b;
         color: #e0dccd;
+    }
+    .block {
+        text-align: justify;
+    }
+    .bloco {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     code.function {
         color: #3ab9e8;

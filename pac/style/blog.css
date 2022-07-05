@@ -22,7 +22,7 @@ html {
 header.menu {
     position: fixed;
     z-index: 99;
-    width: 100%;
+    width: 100vw;
 }
 header.menu {
     margin-top: -90px;
